@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; margin:0; background:#f5f7fb; color:#111 }
+header { background:#0f172a; color:#fff; padding:12px 20px }
+.container { display:flex; gap:18px; padding:20px }
+aside#left { width:320px; }
+main#right { flex:1; background:#fff; padding:12px; border-radius:6px; min-height:600px }
+.card { background:#fff; padding:8px 12px; margin:6px 0; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.06) }
+#email-list { list-style:none; padding:0; margin-top:6px; max-height:520px; overflow:auto }
+#email-list li { padding:10px; border-bottom:1px solid #eee; cursor:pointer }
+#email-list li.urgent { background:#fff4f4 }
+.body { background:#f4f6f8; padding:12px; border-radius:6px; white-space:pre-wrap }
+.actions { margin-top:8px }
+button { padding:8px 12px; margin-right:6px; border:none; border-radius:6px; cursor:pointer }
+#send-btn { background:#0ea5a4; color:#fff }
+#refresh-btn { background:#64748b; color:#fff }
+#filter { width:100%; padding:8px; margin:8px 0; border-radius:6px; border:1px solid #ddd }
+#chart-area { margin-top:16px }
