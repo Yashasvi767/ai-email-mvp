@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>AI Email MVP Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header><h1>AI Email MVP</h1></header>
+  <div class="container">
+    <aside id="left">
+      <div class="stats">
+        <div class="card">Total: <span id="stat-total">0</span></div>
+        <div class="card">Resolved: <span id="stat-resolved">0</span></div>
+        <div class="card">Pending: <span id="stat-pending">0</span></div>
+        <div class="card">Urgent: <span id="stat-urgent">0</span></div>
+      </div>
+      <div>
+        <input id="filter" placeholder="Filter subject..." />
+        <ul id="email-list"></ul>
+      </div>
+    </aside>
+    <main id="right">
+      <div id="email-detail">
+        <h2 id="detail-subject">Select an email</h2>
+        <div><strong>From:</strong> <span id="detail-sender"></span></div>
+        <div><strong>Received:</strong> <span id="detail-received"></span></div>
+        <div><strong>Sentiment:</strong> <span id="detail-sentiment"></span></div>
+        <div><strong>Urgency:</strong> <span id="detail-urgency"></span></div>
+        <hr/>
+        <pre id="detail-body" class="body"></pre>
+        <hr/>
+        <div><strong>Extracted phone:</strong> <span id="detail-phone"></span></div>
+        <div><strong>Summary:</strong> <div id="detail-summary"></div></div>
+        <h3>AI Draft</h3>
+        <textarea id="draft" rows="8"></textarea>
+        <div class="actions">
+          <button id="send-btn">Send (stub)</button>
+          <button id="refresh-btn">Refresh</button>
+        </div>
+      </div>
+      <div id="chart-area">
+        <canvas id="sentimentChart"></canvas>
+      </div>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
